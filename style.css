@@ -339,7 +339,7 @@ place all the mobile tables styles bellow this line
 /*        display: inline-block;*/
     }
 
-    #portfolio-bio-photo img,
+    #portfolio-bio-photo,
     #portfolio-bio {
         display: inline-block;
     }
