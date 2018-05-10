@@ -10,28 +10,41 @@
 
 <body>
 
-    <nav role="navigation" id="nav-container">
-        <div id="name-container">
-            <h2>Kimberly Kearney</h2>
-        </div>
+   <main id="header-nav-hero-container">
+        <header role="banner">
+            <h1>Kimberly Kearney</h1>
+       </header>
 
-        <ul id="nav-list">
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Connect</a></li>
-        </ul>
-    </nav>
+        <nav role="navigation" id="nav-container">
+            <div class="max-content-width">
 
-    <header role="banner" id="header-container">
-        <div id="slogan-container">
-            <h1>The path to discovery</h1>
-        </div>
-    </header>
+                <ul id="nav-list">
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Connect</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+
+        <section role="banner" id="hero-image-container">
+            <div class="max-content-width">
+                <div id="slogan-container">
+                    <h2 class="slogan">The path to discovery</h2>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
 
     <main id="main-content-container">
 
-        <section id="about-me-container">
+        <section id="about-me-container" class="max-content-width">
             <h2>About Me</h2>
 
             <div id="photo-bio-container">
@@ -41,7 +54,7 @@
 
                 <div id="portfolio-bio">
                     <p>Here is an amazingly catchy bio.</p>
-                    <p>Here is an amazingly catchy bio.</p>
+                    <p>Here is an amazingly catchy</p>
                     <p>Here is an amazingly catchy bio.</p>
                     <p>Here is an amazingly catchy bio.</p>
                 </div>
@@ -50,7 +63,7 @@
 
         <section id="skills-container">
             <h2>Skills</h2>
-            <section class="skills">
+            <section class="skills max-content-width">
 
                 <div>
                     <img src="icon-images/html-icon-image.png" alt="">
@@ -111,12 +124,12 @@
             </section>
         </section>
 
-        <section id="all-projects-container">
+        <section id="all-projects-container" class="max-content-width">
             <h2>Projects</h2>
             <div id="row1">
                 <div id="bek-lingo-container" class="project-container">
-                    <div id="bek-lingo" class="project-demo"></div>
-                    <div>
+                    <div id="bek-lingo" class="project-demo inline-project-content"></div>
+                    <div class="inline-project-content">
                         <h3>BEK Lingo</h3>
                         <p>Brief site description</p>
                     </div>
@@ -140,8 +153,8 @@
             </div>
         </section>
 
-        <main id="contact-section">
-            <section id="contact-form-container">
+        <section id="contact-section">
+            <div id="contact-form-container" class="max-content-width">
                 <div>
                     <h2>Connect</h2>
                 </div>
@@ -158,8 +171,8 @@
 
                     </form>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
 
 
     </main>

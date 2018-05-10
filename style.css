@@ -53,78 +53,72 @@ Is a short set of CSS rules that resets the styling of all HTML elements to a co
 
 /* -------------------------------------
 General styles (General Module, wrapping around the modules below)
-(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
 body {
     text-align: center;
 }
 
-#name-container h2 {
-    font-size: 1.5rem;
-    color: #fdfeb1;
-/*    color: #4e81a2;*/
+.max-content-width {
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#nav-list a,
+#main-content-container h3,
+#main-content-container p,
+#form-content input,
+#form-content textarea {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
-#nav-container,
-header,
-h1 {
-/*    background-color: #f2f3c5;*/
-/*    background-color: #d6dde0;*/
-/*    background-color: #5e8fac;*/
-    background-color: #080b0b;
-    color: #1f1e1d;
+.slogan,
+#main-content-container h2,
+#main-content-container h3 {
+    color: #080b0b;
 }
+
 
 /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
-
-#name-container,
-nav a,
-h1 {
-    color: #1f1e1d;
-/*    color: #6a6762;*/
+#header-nav-hero-container {
+    background-color: #080b0b;
 }
 
-#name-container {
+h1,
+#nav-list a {
+    color: #fdfeb1;
+}
+
+h1 {
+    font-size: 1.5rem;
     padding: 1rem 0;
-    font-size: 1.75rem;
 }
 
 #nav-list {
     padding-bottom: .5rem;
 }
 
-nav li {
+#nav-list li {
     display: inline-block;
-    margin-top:
 }
 
-nav a {
-    font-family: 'Source Sans Pro', sans-serif;
+#nav-list a {
     text-decoration: none;
-    text-transform: uppercase;
-    padding-right: .75rem;
-    letter-spacing: 1px;
-/*    color: #d6dde0;*/
-/*    color: #1f1e1d;*/
-    color: #4e81a2;
-    border-radius: 5px
+    letter-spacing: .7px;
+    padding: 0 .5rem;
 }
 
-nav a:hover {
-/*    color: #1f1e1d;*/
-    color: #fdfeb1;
+#nav-list a:hover {
+    color: white;
 }
 
-nav a:first-child {
-    padding-left: .75rem;
-}
-
-header {
+#hero-image-container {
     height: 400px;
     margin: 0 auto;
     background-image: url(images/beach-landscape-sea-water-nature-forest-912844-pxhere.com.jpg);
@@ -133,21 +127,19 @@ header {
     background-size: cover;
 }
 
+/****Ask about absolute. Do I need a position relative on the parent?****/
 #slogan-container {
-    opacity: .85;
-    padding-top: 2rem;
-    margin-left: 2rem;
-    border-radius: 5px;
-}
-
-h1 {
     position: absolute;
-    font-size: 1.75rem;
-    padding: .4rem;
-    border-radius: 2px;
+    opacity: .85;
+    margin-top: 2rem;
+    border-radius: 5px;
     background-color: #d6dde0;
 }
 
+.slogan {
+    font-size: 1.75rem;
+    padding: .4rem;
+}
 
 
 /* -------------------------------------
@@ -155,32 +147,19 @@ Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
 
-#main-content-container h2,
-#main-content-container h3 {
-    color: #080b0b;
-}
-
 #main-content-container h2 {
     font-size: 1.7rem;
+    padding: 1rem 0;
 }
 
 #main-content-container h3,
 #main-content-container p {
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2rem;
 }
 
 #skills-container,
 #contact-section {
     background-color: #f5f7f8;
-}
-
-#main-content-container h2 {
-    margin: 1rem;
-}
-
-#main-content-container div:first-child {
-/*    margin-left: .25rem;*/
 }
 
 
@@ -195,22 +174,14 @@ Content styles (Main Module)
 /******STYLES FOR SKILLS SECTION******/
 #skills-container {
     padding-bottom: 3rem;
-    width: 100%;
 }
 
 #skills-container div {
     display: inline-block;
 }
 
-#skills-container h2 {
-    padding: 1rem 0;
-}
-
 .skills {
     background-color: white;
-    width: 100%;
-    max-width: 1035px;
-    margin: 0 auto;
     border-radius: 3px;
 }
 
@@ -223,9 +194,7 @@ Content styles (Main Module)
 /******STYLES FOR PROJECTS SECTION******/
 .project-container {
     border: 1px solid black;
-    width: 90%;
-    max-width: 800px;
-    margin: 1rem auto;;
+    margin: 1rem 0;
     text-align: left;
 }
 
@@ -242,15 +211,8 @@ Content styles (Main Module)
 
 
 /******STYLES FOR CONTACT FORM SECTION******/
-#contact-section {
-    padding-bottom: 2rem;
-}
 
 #contact-form-container {
-    width: 80%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding-top: 1rem;
     padding-bottom: 2rem;
 }
 
@@ -286,14 +248,13 @@ Content styles (Main Module)
 
 #form-content input,
 #form-content textarea {
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.25rem;
     margin-bottom: .75rem;
     margin-top: .5rem;
 }
 
 #submit-button {
-    width: 100%;
+    width: 175px;;
     margin-top: .5rem;
     font-size: 1.24rem;
     border-radius: 3px;
@@ -311,9 +272,6 @@ Footer styles (Main Module)
 */
 
 footer {
-/*    background-color: #f2f3c5;*/
-/*    background-color: #5e8fac;*/
-/*    background-color: #d6dde0;*/
     background-color: #080b0b;
     color: #fdfeb1;
     left: 0;
@@ -329,29 +287,72 @@ Responsive styles
 place all the mobile tables styles bellow this line
 */
 
-@media screen only and (min-width: 800px) {
+@media only screen and (min-width: 320px) {
     body {
+        color: purple;
+    }
+
+    .max-content-width {
+        width: 95%;
+    }
+}
+
+
+/*iPhone landscape*/
+
+@media only screen and (min-width: 480px) {
+    body {
+        color: green;
+    }
+
+    .max-content-width {
+        width: 90%;
+    }
+}
+
+
+/*ipad potrait*/
+
+@media only screen and (min-width: 768px) {
+    body {
+        color: red;
+    }
+
+    #header-nav-hero-container {
         text-align: left;
     }
 
-    #nav-container {
-/*        float: left;*/
-/*        display: inline-block;*/
+/*
+    header,
+    #nav-container,
+*/
+    #portfolio-bio-photo,
+    #portfolio-bio,
+    .inline-project-content {
+        display: inline-block;
+        width: auto;
+    }
+
+    h1 {
+        padding-left: 1rem;
+    }
+
+    #nav-list {
+        text-align: right;
     }
 
     #portfolio-bio-photo,
     #portfolio-bio {
-        display: inline-block;
+        width: 48%;
     }
 
-    .class="project-demo" {
-        float: left;
-        margin: 0 1rem;
-    }
+}
 
-    #row1:after {
-        content: "";
-        display: table;
-        clear: both;
+
+/*ipad lanscape / small laptop*/
+
+@media only screen and (min-width: 1024px) {
+    body {
+        color: blue;
     }
 }
