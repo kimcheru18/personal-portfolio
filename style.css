@@ -88,6 +88,7 @@ Header styles (Main Module)
 */
 #header-nav-hero-container {
     background-color: #080b0b;
+    width: 100%;
 }
 
 h1,
@@ -322,10 +323,8 @@ place all the mobile tables styles bellow this line
         text-align: left;
     }
 
-/*
-    header,
+    #header-h1,
     #nav-container,
-*/
     #portfolio-bio-photo,
     #portfolio-bio,
     .inline-project-content {
@@ -337,9 +336,6 @@ place all the mobile tables styles bellow this line
         padding-left: 1rem;
     }
 
-    #nav-list {
-        text-align: right;
-    }
 
     #portfolio-bio-photo,
     #portfolio-bio {
