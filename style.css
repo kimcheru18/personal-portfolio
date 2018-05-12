@@ -307,55 +307,9 @@ Content styles (Main Module)
     letter-spacing: .35px;
 }
 
-
-
-/******STYLES FOR CONTACT FORM SECTION******/
-
 #contact-form-container {
-    padding-bottom: 2rem;
+    padding: 3rem
 }
-
-#form-content label {
-    text-align: left;
-}
-
-#form-content #submit-button {
-    text-align: center;
-}
-
-#contact-form-container div,
-#form-content input,
-#form-content textarea {
-    display: block;
-}
-
-#form-content input,
-#form-content textarea {
-    border-bottom: 1px solid #ddd;
-    border-left: 1px solid #c3c3c3;
-    border-right: 1px solid #c3c3c3;
-    border-top: 1px solid #7c7c7c;
-    width: 100%;
-}
-
-#form-content h3, {
-    font-size: 1.25;
-    margin-bottom: .5rem;
-}
-
-#form-content input,
-#form-content textarea {
-    padding: .25rem;
-}
-
-#form-content input,
-#form-content textarea {
-    font-size: 1.25rem;
-    margin-bottom: .75rem;
-    margin-top: .5rem;
-}
-
-
 
 /* -------------------------------------
 Footer styles (Main Module)
