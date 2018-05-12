@@ -196,7 +196,7 @@ Content styles (Main Module)
 
 /******STYLES FOR ABOUT ME SECTION******/
 #about-me-photo {
-    height: 200px;
+    height: 300px;
     border-radius: 5px;
     transform: rotate(180deg);
 }
@@ -278,6 +278,7 @@ Content styles (Main Module)
 .code-demo button,
 #submit-button {
     margin: 0 .5rem;
+    padding: .75rem 0;
     background-color: #26455b;
     border-radius: 3px;
     box-shadow: 1px 1px 4px #b2b7b1;
@@ -288,8 +289,12 @@ Content styles (Main Module)
 .code-demo button {
     display: inline-block;
     font-size: 1.1rem;
-    padding: .25rem 0;
     width: 100px;
+}
+
+.code-demo a {
+    color: #fdfeb1;
+    text-decoration: none;
 }
 
 #submit-button {
@@ -336,8 +341,7 @@ Content styles (Main Module)
 }
 
 #form-content input,
-#form-content textarea,
-#submit-button {
+#form-content textarea {
     padding: .25rem;
 }
 
