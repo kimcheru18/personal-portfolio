@@ -62,14 +62,9 @@ body {
     color: #412f2d;
 }
 
-.max-content-width,
-.header-max-width {
+.max-content-width {
     width: 80%;
     margin: 0 auto;
-}
-
-.header-max-width {
-    max-width: 1500px;
 }
 
 .max-content-width {
@@ -183,8 +178,7 @@ Content styles (Main Module)
 }
 
 #skills-container,
-#contact-section,
-.project-container{
+#contact-section {
     background-color: #dce2e5;
 }
 
@@ -203,6 +197,11 @@ Content styles (Main Module)
 
 #portfolio-bio{
     text-align: left;
+}
+
+#portfolio-bio-photo {
+    text-align: right;
+    float: right;
 }
 /******STYLES FOR SKILLS SECTION******/
 #skills-container {
@@ -229,7 +228,11 @@ Content styles (Main Module)
     padding: 1rem;
     margin: 1rem 0;
     text-align: left;
-    border-radius: 3px;
+    border-bottom: 1px solid #080b0b;
+}
+
+.project-container:last-child {
+   border: 0;
 }
 
 .project-container h3,
@@ -425,15 +428,15 @@ place all the mobile tables styles bellow this line
         padding-right: 1rem;
     }
 
-
     .project-demo,
     .inline-project-content {
                 display: inline-block;
                 width: 49%;
     }
 
+    .project-demo,
     .inline-project-content {
-        vertical-align: top;
+        vertical-align: middle;
     }
 
 }
