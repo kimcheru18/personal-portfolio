@@ -11,24 +11,27 @@
 <body>
 
    <main id="header-nav-hero-container">
-       <section class="header-max-width">
 
-            <header role="banner">
-                <div id="header-title">
-                   <h1>Kimberly Kearney</h1>
-               </div>
+       <section class="fixed-header">
+           <div class="header-max-width">
 
-                <nav role="navigation" id="nav-container">
-                    <ul id="nav-list">
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Connect</a></li>
-                    </ul>
-                </nav>
+                <header role="banner">
+                    <div id="header-title">
+                       <h1>Kimberly Kearney</h1>
+                   </div>
 
-            </header>
+                    <nav role="navigation" id="nav-container">
+                        <ul id="nav-list">
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Skills</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Connect</a></li>
+                        </ul>
+                    </nav>
 
+                </header>
+
+           </div>
        </section>
 
         <section role="banner" id="hero-image-container">
@@ -46,24 +49,36 @@
     <main id="main-content-container">
 
         <section id="about-me-container" class="max-content-width">
-            <h2>About Me</h2>
+
+            <div>
+                <h2>About Me</h2>
+            </div>
 
             <div id="photo-bio-container">
+
+                <div id="portfolio-bio">
+                    <p>Hello, I'm Kimberly, and I was just minding my own business when this opportunity landed in my lap. I was asked to collaborate with others on a company project.</p>
+                    <br>
+                    <p>Pairing creativity and functionality, I worked together with the IT team to construct a scheduling program. Now, while that was very exciting, it wasn't particulary beautiful. And so I set out on this journey to discover the possibilities of web development.</p>
+                    <br>
+                    <p>I am now a full-stack web developer and graduate of the Fullstack Web Development Program at Thinkful. I am excited to be a part of a team that I can learn from and contribute to.</p>
+                    <br>
+                    <p> I am excited to hear from you!</p>
+                </div>
+
                 <div id="portfolio-bio-photo">
                     <img src="images/profile-image.JPG" alt="" id="about-me-photo">
                 </div>
 
-                <div id="portfolio-bio">
-                    <p>Here is an amazingly catchy bio.</p>
-                    <p>Here is an amazingly catchy</p>
-                    <p>Here is an amazingly catchy bio.</p>
-                    <p>Here is an amazingly catchy bio.</p>
-                </div>
             </div>
         </section>
 
         <section id="skills-container">
-            <h2>Skills</h2>
+
+            <div>
+                <h2>Skills</h2>
+            </div>
+
             <section class="skills max-content-width">
 
                 <div>
@@ -126,15 +141,65 @@
         </section>
 
         <section id="all-projects-container" class="max-content-width">
-            <h2>Projects</h2>
-            <div id="row1">
+
+            <div>
+                <h2>Projects</h2>
+            </div>
+
+            <div>
+
                 <div id="bek-lingo-container" class="project-container">
                     <div id="bek-lingo" class="project-demo">
-                        <img src="project-screenshots/landing-page%20copy.png" alt="">
                     </div>
 
                     <div class="inline-project-content">
                         <h3>BEK Lingo</h3>
+                        <p>
+                            This is a simple communication app for someone suffering from ataxia or other language impairment. There are other apps for this condition but they typically require that the user know what words they are looking for in order to create a sentence.</p>
+
+                        <div class="code-demo">
+                            <button>Code</button>
+                            <button>Demo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sop-app-container" class="project-container">
+                    <div id="sop-app" class="project-demo">
+                    </div>
+
+                    <div class="inline-project-content">
+                        <h3>Statement of Purpose</h3>
+                        <p>This app helps one to create a Statement of Purpose. Writing this statement is an assignment to discover and create a verbal representation of who you are and what is important to you. It is an idea to aspire to, a direction to go.</p>
+
+                        <div class="code-demo">
+                            <button>Code</button>
+                            <button>Demo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fav-coffee-container" class="project-container">
+                    <div id="fav-coffee" class="project-demo">
+                    </div>
+
+                    <div class="inline-project-content">
+                        <h3>What's your perfect coffee?</h3>
+                        <p>This app includes 20 different coffee drinks from different countries. A person can read through the descriptions, view the images and choose a coffee. An overlay will then show where the coffee can be found, two YouTube videos on how to make it and some coffee trivia from Wikipedia.</p>
+
+                        <div class="code-demo">
+                            <button>Code</button>
+                            <button>Demo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="women-and-auto-container" class="project-container">
+                    <div id="women-and-auto" class="project-demo">
+                    </div>
+
+                    <div class="inline-project-content">
+                        <h3>Women Changing Automotive History</h3>
                         <p>Many stroke survivors are unable to communicate effectively due to damage to the language center of the brain. This condition is called aphasia.  </p>
 
                         <div class="code-demo">
@@ -144,21 +209,6 @@
                     </div>
                 </div>
 
-                <div id="bek-lingo-container" class="project-container">
-                    <div id="bek-lingo" class="project-demo"></div>
-                    <div>
-                        <h3>BEK Lingo</h3>
-                        <p>Brief site description</p>
-                    </div>
-                </div>
-
-                <div id="bek-lingo-container" class="project-container">
-                    <div id="bek-lingo" class="project-demo"></div>
-                    <div>
-                        <h3>BEK Lingo</h3>
-                        <p>Brief site description</p>
-                    </div>
-                </div>
             </div>
         </section>
 

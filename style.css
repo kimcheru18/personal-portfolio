@@ -59,6 +59,7 @@ General styles (General Module, wrapping around the modules below)
 
 body {
     text-align: center;
+    color: #412f2d;
 }
 
 .max-content-width,
@@ -69,8 +70,6 @@ body {
 
 .header-max-width {
     max-width: 1500px;
-    width: 80%;
-    margin: 0 auto;
 }
 
 .max-content-width {
@@ -78,7 +77,6 @@ body {
 }
 
 #nav-list a,
-#main-content-container h3,
 #main-content-container p,
 #form-content input,
 #form-content textarea {
@@ -97,10 +95,20 @@ body {
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
+
+#header-nav-hero-container,
+.fixed-header {
+    width: 100%;
+}
+
 #header-nav-hero-container {
     position: relative;
+}
+
+.fixed-header{
     background-color: #080b0b;
-    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 h1,
@@ -144,7 +152,7 @@ h1 {
 #slogan-container {
     position: absolute;
     opacity: .85;
-    margin-top: 2rem;
+    margin-top: 7rem;
     border-radius: 5px;
     background-color: #d6dde0;
 }
@@ -170,11 +178,21 @@ Content styles (Main Module)
     font-size: 1.2rem;
 }
 
-#skills-container,
-#contact-section {
-    background-color: #f5f7f8;
+#about-me-container {
+    margin: 1rem auto;
 }
 
+#skills-container,
+#contact-section,
+.project-container{
+    background-color: #dce2e5;
+}
+
+#portfolio-bio,
+.inline-project-content {
+    vertical-align: top;
+    margin-top: 1.25rem;
+}
 
 /******STYLES FOR ABOUT ME SECTION******/
 #about-me-photo {
@@ -183,7 +201,9 @@ Content styles (Main Module)
     transform: rotate(180deg);
 }
 
-
+#portfolio-bio{
+    text-align: left;
+}
 /******STYLES FOR SKILLS SECTION******/
 #skills-container {
     padding-bottom: 3rem;
@@ -206,9 +226,10 @@ Content styles (Main Module)
 
 /******STYLES FOR PROJECTS SECTION******/
 .project-container {
-    border: 1px solid black;
+    padding: 1rem;
     margin: 1rem 0;
     text-align: left;
+    border-radius: 3px;
 }
 
 .project-container h3,
@@ -218,12 +239,35 @@ Content styles (Main Module)
 }
 
 .project-demo {
-    border: 1px solid black;
-/*    height: 200px;*/
+    height: 200px;
+    border-radius: 3px;
+    box-shadow: 1px 3px 6px grey;
 }
 
-.project-demo img {
-    height: 300px;
+#bek-lingo,
+#sop-app,
+#fav-coffee,
+#women-and-auto {
+    height: 275px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+#bek-lingo {
+    background-image: url(project-screenshots/bek-lingo-screenshot.png);
+}
+
+#sop-app {
+    background-image: url(project-screenshots/sop-app-screenshot.png);
+}
+
+#fav-coffee {
+    background-image: url(project-screenshots/coffee-screenshot.png);
+}
+
+#women-and-auto {
+    background-image: url(project-screenshots/women-and-auto.png);
 }
 
 .code-demo {
@@ -231,13 +275,31 @@ Content styles (Main Module)
     margin: 1rem;
 }
 
+.code-demo button,
+#submit-button {
+    margin: 0 .5rem;
+    background-color: #26455b;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px #b2b7b1;
+    color: #fdfeb1;
+    letter-spacing: .35px;
+}
+
 .code-demo button {
     display: inline-block;
+    font-size: 1.1rem;
+    padding: .25rem 0;
     width: 100px;
-    border: 1px solid black;
-    margin: 0 .5rem;
-    background-color: darkcyan
 }
+
+#submit-button {
+    width: 175px;
+    font-size: 1.24rem;
+    font-weight: 500;
+    letter-spacing: .35px;
+}
+
+
 
 /******STYLES FOR CONTACT FORM SECTION******/
 
@@ -245,8 +307,12 @@ Content styles (Main Module)
     padding-bottom: 2rem;
 }
 
-#form-content {
+#form-content label {
     text-align: left;
+}
+
+#form-content #submit-button {
+    text-align: center;
 }
 
 #contact-form-container div,
@@ -282,17 +348,6 @@ Content styles (Main Module)
     margin-top: .5rem;
 }
 
-#submit-button {
-    width: 175px;;
-    margin-top: .5rem;
-    font-size: 1.24rem;
-    border-radius: 3px;
-    background-color: #87a3ba;
-    color: #080b0b;
-    padding: .5rem 0;
-    font-weight: 500;
-    letter-spacing: .35px;
-}
 
 
 /* -------------------------------------
@@ -318,7 +373,7 @@ place all the mobile tables styles bellow this line
 
 @media only screen and (min-width: 320px) {
     body {
-        color: purple;
+/*        color: purple;*/
     }
 
     .max-content-width {
@@ -331,21 +386,11 @@ place all the mobile tables styles bellow this line
 
 @media only screen and (min-width: 480px) {
     body {
-        color: green;
+/*        color: green;*/
     }
 
     .max-content-width {
         width: 90%;
-    }
-
-    .project-demo,
-    .inline-project-content {
-        display: inline-block;
-        width: 49%;
-    }
-
-    .inline-project-content {
-        vertical-align: top;
     }
 }
 
@@ -354,7 +399,7 @@ place all the mobile tables styles bellow this line
 
 @media only screen and (min-width: 768px) {
     body {
-        color: red;
+/*        color: red;*/
     }
 
     #header-title,
@@ -376,6 +421,17 @@ place all the mobile tables styles bellow this line
         padding-right: 1rem;
     }
 
+
+    .project-demo,
+    .inline-project-content {
+                display: inline-block;
+                width: 49%;
+    }
+
+    .inline-project-content {
+        vertical-align: top;
+    }
+
 }
 
 
@@ -383,6 +439,6 @@ place all the mobile tables styles bellow this line
 
 @media only screen and (min-width: 1024px) {
     body {
-        color: blue;
+/*        color: blue;*/
     }
 }
