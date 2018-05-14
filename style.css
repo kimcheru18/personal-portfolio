@@ -192,6 +192,8 @@ Content styles (Main Module)
 #about-me-photo {
     height: 370px;
     border-radius: 5px;
+    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    box-shadow: 1px 3px 6px grey;
 }
 
 #portfolio-bio{
@@ -242,7 +244,7 @@ Content styles (Main Module)
 }
 
 .project-demo {
-    height: 200px;
+/*    height: 200px;*/
     border-radius: 3px;
     box-shadow: 1px 3px 6px grey;
 }
@@ -262,7 +264,7 @@ Content styles (Main Module)
 }
 
 #sop-app {
-    background-image: url(project-screenshots/sop-app-screenshot.png);
+    background-image: url(project-screenshots/sop-screenshot.png);
 }
 
 #fav-coffee {
@@ -270,7 +272,7 @@ Content styles (Main Module)
 }
 
 #women-and-auto {
-    background-image: url(project-screenshots/women-and-auto.png);
+    background-image: url(project-screenshots/women-and-auto-screenshot.png);
 }
 
 .code-demo {
