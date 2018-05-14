@@ -190,9 +190,8 @@ Content styles (Main Module)
 
 /******STYLES FOR ABOUT ME SECTION******/
 #about-me-photo {
-    height: 300px;
+    height: 370px;
     border-radius: 5px;
-    transform: rotate(180deg);
 }
 
 #portfolio-bio{
@@ -200,12 +199,13 @@ Content styles (Main Module)
 }
 
 #portfolio-bio-photo {
-    text-align: right;
-    float: right;
+    margin-top: 1rem;
 }
+
 /******STYLES FOR SKILLS SECTION******/
 #skills-container {
     padding-bottom: 3rem;
+    clear: right;
 }
 
 #skills-container div {
@@ -380,6 +380,11 @@ place all the mobile tables styles bellow this line
     #nav-container {
         text-align: right;
         padding-right: 1rem;
+    }
+
+    #portfolio-bio-photo {
+        text-align: right;
+        float: right;
     }
 
     .project-demo,
