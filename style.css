@@ -245,8 +245,8 @@ Content styles (Main Module)
 
 .project-demo {
 /*    height: 200px;*/
-    border-radius: 3px;
-    box-shadow: 1px 3px 6px grey;
+/*    border-radius: 3px;*/
+/*    box-shadow: 1px 3px 6px grey;*/
 }
 
 #bek-lingo,
@@ -255,8 +255,10 @@ Content styles (Main Module)
 #women-and-auto {
     height: 275px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: top center;
+/*    box-shadow: 1px 3px 6px grey;*/
+    border-radius: 3px;
 }
 
 #bek-lingo {
@@ -268,7 +270,7 @@ Content styles (Main Module)
 }
 
 #fav-coffee {
-    background-image: url(project-screenshots/coffee-screenshot.png);
+    background-image: url(project-screenshots/coffee-app-screenshot.png);
 }
 
 #women-and-auto {
@@ -320,11 +322,38 @@ Footer styles (Main Module)
 
 footer {
     background-color: #080b0b;
-    color: #fdfeb1;
     left: 0;
     bottom: 0;
     font-size: 1.25rem;
     padding: 1rem 0;
+}
+
+footer p,
+#contact-info-ul {
+    display: inline-block;
+    padding: .5rem 1rem;
+}
+
+footer p,
+.contact-info a {
+    color: #fdfeb1;
+}
+
+.contact-info {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+
+
+.fa {
+/*
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+*/
 }
 
 /* -------------------------------------
