@@ -131,7 +131,7 @@ h1 {
 }
 
 #nav-list a:hover {
-    color: white;
+    text-decoration: underline;
 }
 
 #hero-image-container {
@@ -177,11 +177,6 @@ Content styles (Main Module)
     margin: 1rem auto;
 }
 
-#skills-container,
-#contact-section {
-    background-color: #dce2e5;
-}
-
 #portfolio-bio,
 .inline-project-content {
     vertical-align: top;
@@ -214,11 +209,6 @@ Content styles (Main Module)
     display: inline-block;
 }
 
-.skills {
-    background-color: white;
-    border-radius: 3px;
-}
-
 #skills-container img {
     height: 78px;
     padding: .5rem 0;
@@ -241,12 +231,6 @@ Content styles (Main Module)
 .project-container p {
     margin-top: .5rem;
     margin-left: .5rem;
-}
-
-.project-demo {
-/*    height: 200px;*/
-/*    border-radius: 3px;*/
-/*    box-shadow: 1px 3px 6px grey;*/
 }
 
 #bek-lingo,
@@ -286,7 +270,7 @@ Content styles (Main Module)
 #submit-button {
     margin: 0 .5rem;
     padding: .75rem 0;
-    background-color: #26455b;
+    background-color: #506a7c;
     border-radius: 3px;
     box-shadow: 1px 1px 4px #b2b7b1;
     color: #fdfeb1;
@@ -311,10 +295,6 @@ Content styles (Main Module)
     letter-spacing: .35px;
 }
 
-#contact-form-container {
-    padding: 3rem
-}
-
 /* -------------------------------------
 Footer styles (Main Module)
 (all the styles inside the < footer > tag)
@@ -336,24 +316,24 @@ footer p,
 
 footer p,
 .contact-info a {
-    color: #fdfeb1;
+    color: #f0f18c;
+
+}
+
+.contact-info a {
+    font-size: 1.5rem;
+    vertical-align: middle;
+
+}
+
+.contact-info a:hover {
+    color: white;
+
 }
 
 .contact-info {
     display: inline-block;
     padding: 0 1rem;
-}
-
-
-
-.fa {
-/*
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-*/
 }
 
 /* -------------------------------------
@@ -364,10 +344,6 @@ place all the mobile tables styles bellow this line
 */
 
 @media only screen and (min-width: 320px) {
-    body {
-/*        color: purple;*/
-    }
-
     .max-content-width {
         width: 95%;
     }
@@ -377,10 +353,6 @@ place all the mobile tables styles bellow this line
 /*iPhone landscape*/
 
 @media only screen and (min-width: 480px) {
-    body {
-/*        color: green;*/
-    }
-
     .max-content-width {
         width: 90%;
     }
@@ -390,10 +362,13 @@ place all the mobile tables styles bellow this line
 /*ipad potrait*/
 
 @media only screen and (min-width: 768px) {
-    body {
-/*        color: red;*/
-    }
 
+}
+
+
+/*ipad lanscape / small laptop*/
+
+@media only screen and (min-width: 1024px) {
     #header-title,
     #nav-container,
     #portfolio-bio-photo,
@@ -420,22 +395,12 @@ place all the mobile tables styles bellow this line
 
     .project-demo,
     .inline-project-content {
-                display: inline-block;
-                width: 49%;
+        display: inline-block;
+        width: 49%;
     }
 
     .project-demo,
     .inline-project-content {
         vertical-align: middle;
-    }
-
-}
-
-
-/*ipad lanscape / small laptop*/
-
-@media only screen and (min-width: 1024px) {
-    body {
-/*        color: blue;*/
     }
 }
