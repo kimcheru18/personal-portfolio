@@ -26,9 +26,9 @@
 
                     <nav role="navigation" id="nav-container">
                         <ul id="nav-list">
-                            <li><a href="#hero-image-container">About Me</a></li>
-                            <li><a href="#portfolio-bio-photo">Skills</a></li>
-                            <li><a href="#code-icons">Projects</a></li>
+                            <li><a href="#slogan-container">About Me</a></li>
+                            <li><a href="#skills-container">Skills</a></li>
+                            <li><a href="#all-projects-container">Projects</a></li>
                             <li><a href="#contact-info-ul">Connect</a></li>
                         </ul>
                     </nav>
@@ -41,7 +41,7 @@
         <section role="banner" id="hero-image-container">
             <div class="max-content-width">
                 <div id="slogan-container">
-                    <h2 class="slogan">The path to discovery</h2>
+                    <h2 id="slogan">The path to discovery</h2>
                 </div>
             </div>
         </section>
@@ -52,11 +52,10 @@
 
         <section id="about-me-container" class="max-content-width">
 
-            <div>
-                <h2>About Me</h2>
-            </div>
-
-            <div id="photo-bio-container">
+            <section id="photo-bio-container" class="page-content">
+                <section>
+                    <h2>About Me</h2>
+                </section>
 
                 <div id="portfolio-bio">
                     <p>Hello, I am Kimberly,</p>
@@ -78,184 +77,184 @@
                     <img src="images/bio-image.JPG" alt="" id="about-me-photo">
                 </div>
 
-            </div>
+            </section>
         </section>
 
-        <section id="skills-container">
-
-            <div>
-                <h2>Skills</h2>
-            </div>
-
-            <section id="code-icons" class="skills max-content-width">
-
+        <section id="skills-container" class="max-content-width page">
+            <section id="code-icons-container" class="page-content">
                 <div>
+                    <h2>Skills</h2>
+                </div>
+
+                <div class="code-lang-icons">
                     <img src="icon-images/html-icon-image.png" alt="">
                 </div>
 
-                <div>
+                <div class="code-lang-icons">
                     <img src="icon-images/css3.png" alt="css3 logo">
                 </div>
 
-                <div>
+                <div class="code-lang-icons">
                     <img src="icon-images/js-logo.png" alt="javascript logo">
                 </div>
 
-                <div>
+                <div class="code-lang-icons">
                     <img src="icon-images/jquery-logo.jpg" alt="jquery logo">
                 </div>
 
-                <div>
+                <div class="code-lang-icons">
                     <img src="icon-images/ajax-logo.png" alt="ajax logo">
                 </div>
 
-                <div>
+                <div class="code-lang-icons">
                     <img src="icon-images/node-logo.png" alt="node logo">
                 </div>
 
-                <div>
+                <div class="code-lang-icons">
                     <img src="icon-images/react-redux-logo.jpg" alt="react redux logo">
                 </div>
 
-                <div>
+                <div class="code-lang-icons">
                     <img src="icon-images/mongo-logo-2.png" alt="mongo logo">
                 </div>
 
-                <div>
+                <div class="code-lang-icons">
                     <img src="icon-images/mlab-logo.png" alt="mlab logo">
                 </div>
 
-                <div>
+                <div class="code-lang-icons">
                     <img src="icon-images/mocha-logo.png" alt="mocha logo">
                 </div>
 
-                <div>
+                <div class="code-lang-icons">
                     <img src="icon-images/chai-logo.png" alt="chai logo">
                 </div>
 
-                <div>
+                <div class="code-lang-icons">
                     <img src="icon-images/brackets-logo.jpeg" alt="brackets logo">
                 </div>
 
-                <div>
+                <div class="code-lang-icons">
                     <img src="icon-images/sublime-logo.png" alt="sublime logo">
                 </div>
 
-                <div>
+                <div class="code-lang-icons">
                     <img src="icon-images/github-logo.png" alt="github logo">
                 </div>
 
             </section>
         </section>
 
-        <section id="all-projects-container" class="max-content-width">
+        <section id="all-projects-container" class="max-content-width page">
 
-            <div>
-                <h2>Projects</h2>
-            </div>
+            <section class="page-content">
 
-            <section>
-
-                <div id="bek-lingo-container" class="project-container">
-
-                    <div class="inline-project-content">
-                        <div class="project-image-container">
-                            <img src="project-screenshots/bek-lingo-screenshot.png" alt="">
-                        </div>
-
-                        <div class="project-content-container">
-                            <h3>BEK Lingo</h3>
-                            <p>
-                                This is a simple communication app for someone suffering from ataxia or other language impairment. There are other apps for this condition but they typically require that the user know what words they are looking for in order to create a sentence.</p>
-
-                            <div class="code-demo">
-                                <button><a href="https://github.com/kimcheru18/non-verbal-communication-fullstack-capstone-react" target="_blank">Code</a></button>
-                                <button><a href="https://kimcheru18.github.io/non-verbal-communication-fullstack-capstone-react/build/" target="_blank">Demo</a></button>
-                            </div>
-
-                            <div>
-                                <p style="text-align: center">HTML, CSS, JavaScript, jQuery, NodeJS, React, MongoDB, Mongoose, Express, Mocha, Chai, mLab, Heroku</p>
-                            </div>
-                        </div>
-
-                    </div>
-
+                <div>
+                    <h2>Projects</h2>
                 </div>
 
-                <div id="sop-app-container" class="project-container">
-                    <div class="inline-project-content">
+                <div>
+                    <div id="bek-lingo-container" class="project-container">
 
-                        <div class="project-image-container">
-                            <img src="project-screenshots/sop-screenshot.png" alt="">
-                        </div>
-
-                        <div class="project-content-container">
-                            <h3>Statement of Purpose</h3>
-                            <p>This app helps one to create a Statement of Purpose. Writing this statement is an assignment to discover and create a verbal representation of who you are and what is important to you. It is an idea to aspire to, a direction to go.</p>
-
-                            <div class="code-demo">
-                                <button><a href="https://github.com/kimcheru18/define-statement-of-purpose-node-capstone" target="_blank">Code</a></button>
-                                <button><a href="https://define-statement-of-purpose.herokuapp.com/" target="_blank">Demo</a></button>
+                        <div class="inline-project-content">
+                            <div class="project-image-container">
+                                <img src="project-screenshots/bek-lingo-screenshot.png" alt="">
                             </div>
 
-                            <div>
-                                <p style="text-align: center">HTML, CSS, JavaScript, jQuery, NodeJS, React, MongoDB, Mongoose, Express, Mocha, Chai, mLab, Heroku</p>
-                            </div>
-                        </div>
+                            <div class="project-content-container">
+                                <h3>BEK Lingo</h3>
+                                <p>
+                                    This is a simple communication app for someone suffering from ataxia or other language impairment. There are other apps for this condition but they typically require that the user know what words they are looking for in order to create a sentence.</p>
 
-                    </div>
+                                <div class="code-demo">
+                                    <button><a href="https://github.com/kimcheru18/non-verbal-communication-fullstack-capstone-react" target="_blank">Code</a></button>
+                                    <button><a href="https://kimcheru18.github.io/non-verbal-communication-fullstack-capstone-react/build/" target="_blank">Demo</a></button>
+                                </div>
 
-                </div>
-
-                <div id="fav-coffee-container" class="project-container">
-                    <div class="inline-project-content">
-
-                        <div class="project-image-container">
-                            <img src="project-screenshots/coffee-app-screenshot.png" alt="">
-                        </div>
-
-                        <div class="project-content-container">
-                            <h3>What's your perfect coffee?</h3>
-                            <p>This app includes 20 different coffee drinks from different countries. A person can read through the descriptions, view the images and choose a coffee. An overlay will then show where the coffee can be found, two YouTube videos on how to make it and some coffee trivia from Wikipedia.</p>
-
-                            <div class="code-demo">
-                                <button><a href="https://github.com/kimcheru18/coffee-search-wikipedia-api-capstone" target="_blank">Code</a></button>
-                                <button><a href="https://kimcheru18.github.io/coffee-search-wikipedia-api-capstone/" target="_blank">Demo</a></button>
+                                <div>
+                                    <p style="text-align: center">HTML, CSS, JavaScript, jQuery, NodeJS, React, MongoDB, Mongoose, Express, Mocha, Chai, mLab, Heroku</p>
+                                </div>
                             </div>
 
-                            <div>
-                                <p style="text-align: center">HTML, CSS, JavaScript, jQuery</p>
-                            </div>
                         </div>
 
                     </div>
 
-                </div>
+                    <div id="sop-app-container" class="project-container">
+                        <div class="inline-project-content">
 
-                <div id="women-and-auto-container" class="project-container">
-
-                    <div class="inline-project-content">
-
-                        <div class="project-image-container">
-                            <img src="project-screenshots/women-and-auto-screenshot.png" alt="">
-                        </div>
-
-                        <div class="project-content-container">
-                            <h3>Women Changing Automotive History</h3>
-                            <p>Many stroke survivors are unable to communicate effectively due to damage to the language center of the brain. This condition is called aphasia.  </p>
-
-                            <div class="code-demo">
-                                <button><a href="https://github.com/kimcheru18/women-changing-automotive-history-quiz" target="_blank">Code</a></button>
-                                <button><a href="https://kimcheru18.github.io/women-changing-automotive-history-quiz/" target="_blank">Demo</a></button>
+                            <div class="project-image-container">
+                                <img src="project-screenshots/sop-screenshot.png" alt="">
                             </div>
 
-                            <div id="code-languages">
-                                <p style="text-align: center">HTML, CSS, JavaScript, jQuery</p>
+                            <div class="project-content-container">
+                                <h3>Statement of Purpose</h3>
+                                <p>This app helps one to create a Statement of Purpose. Writing this statement is an assignment to discover and create a verbal representation of who you are and what is important to you. It is an idea to aspire to, a direction to go.</p>
+
+                                <div class="code-demo">
+                                    <button><a href="https://github.com/kimcheru18/define-statement-of-purpose-node-capstone" target="_blank">Code</a></button>
+                                    <button><a href="https://define-statement-of-purpose.herokuapp.com/" target="_blank">Demo</a></button>
+                                </div>
+
+                                <div>
+                                    <p style="text-align: center">HTML, CSS, JavaScript, jQuery, NodeJS, React, MongoDB, Mongoose, Express, Mocha, Chai, mLab, Heroku</p>
+                                </div>
                             </div>
+
                         </div>
 
                     </div>
 
+                    <div id="fav-coffee-container" class="project-container">
+                        <div class="inline-project-content">
+
+                            <div class="project-image-container">
+                                <img src="project-screenshots/coffee-app-screenshot.png" alt="">
+                            </div>
+
+                            <div class="project-content-container">
+                                <h3>What's your perfect coffee?</h3>
+                                <p>This app includes 20 different coffee drinks from different countries. A person can read through the descriptions, view the images and choose a coffee. An overlay will then show where the coffee can be found, two YouTube videos on how to make it and some coffee trivia from Wikipedia.</p>
+
+                                <div class="code-demo">
+                                    <button><a href="https://github.com/kimcheru18/coffee-search-wikipedia-api-capstone" target="_blank">Code</a></button>
+                                    <button><a href="https://kimcheru18.github.io/coffee-search-wikipedia-api-capstone/" target="_blank">Demo</a></button>
+                                </div>
+
+                                <div>
+                                    <p style="text-align: center">HTML, CSS, JavaScript, jQuery</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="women-and-auto-container" class="project-container">
+
+                        <div class="inline-project-content">
+
+                            <div class="project-image-container">
+                                <img src="project-screenshots/women-and-auto-screenshot.png" alt="">
+                            </div>
+
+                            <div class="project-content-container">
+                                <h3>Women Changing Automotive History</h3>
+                                <p>Many stroke survivors are unable to communicate effectively due to damage to the language center of the brain. This condition is called aphasia.  </p>
+
+                                <div class="code-demo">
+                                    <button><a href="https://github.com/kimcheru18/women-changing-automotive-history-quiz" target="_blank">Code</a></button>
+                                    <button><a href="https://kimcheru18.github.io/women-changing-automotive-history-quiz/" target="_blank">Demo</a></button>
+                                </div>
+
+                                <div id="code-languages">
+                                    <p style="text-align: center">HTML, CSS, JavaScript, jQuery</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
 
             </section>
