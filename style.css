@@ -63,7 +63,7 @@ body {
 }
 
 body .max-content-width {
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
     max-width: 1000px;
 }
@@ -171,8 +171,8 @@ Content styles (Main Module)
     margin-top: 3rem;
 }
 
-#about-me-container {
-/*    margin: 1rem auto;*/
+.page-content:first-child {
+    margin-top: 2rem;
 }
 
 #portfolio-bio {
@@ -180,8 +180,12 @@ Content styles (Main Module)
 }
 
 /******STYLES FOR ABOUT ME SECTION******/
+#about-me-container {
+    padding: 0 1.5rem;
+}
+
 #about-me-photo {
-    height: 370px;
+    height: 26rem;
     border-radius: 5px;
     box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
     box-shadow: 1px 3px 6px grey;
@@ -196,11 +200,11 @@ Content styles (Main Module)
 }
 
 /******STYLES FOR SKILLS SECTION******/
+
 #code-icons-container,
 #all-projects-container {
-/*    margin-top: 2rem;*/
+    padding-top: 3rem;
 }
-
 #code-icons-container .code-lang-icons {
     display: inline-block;
 }
@@ -246,8 +250,7 @@ Content styles (Main Module)
     margin: 1rem;
 }
 
-.code-demo button,
-#submit-button {
+.code-demo button {
     margin: 0 .5rem;
     padding: .25rem 0;
     background-color: #506a7c;
@@ -255,9 +258,6 @@ Content styles (Main Module)
     box-shadow: 1px 1px 4px #b2b7b1;
     color: #fdfeb1;
     letter-spacing: .35px;
-}
-
-.code-demo button {
     display: inline-block;
     font-size: .9rem;
     width: 100px;
@@ -266,13 +266,6 @@ Content styles (Main Module)
 .code-demo a {
     color: #fdfeb1;
     text-decoration: none;
-}
-
-#submit-button {
-    width: 175px;
-    font-size: 1.24rem;
-    font-weight: 500;
-    letter-spacing: .35px;
 }
 
 /* -------------------------------------
@@ -322,9 +315,6 @@ place all the mobile tables styles bellow this line
 */
 
 @media only screen and (min-width: 320px) {
-    .max-content-width {
-        width: 95%;
-    }
 }
 
 
@@ -341,6 +331,10 @@ place all the mobile tables styles bellow this line
 
     #main-content-container p {
         font-size: 1.25rem;
+    }
+
+    #about-me-container {
+        padding: 0;
     }
 }
 
@@ -415,15 +409,20 @@ place all the mobile tables styles bellow this line
 
     #portfolio-bio,
     #portfolio-bio-photo {
-        width: 45%;
+        width: 50%;
+    }
+
+    #portfolio-bio {
+        float: left;
     }
 
     #portfolio-bio-photo {
         margin-top: 2rem;
         float: right;
+        text-align: right;
     }
 
-    #about-me-photo {
-        height: 26rem;
+    #skills-container {
+        clear: both;
     }
 }
