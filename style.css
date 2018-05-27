@@ -65,9 +65,6 @@ body {
 .max-content-width {
     width: 80%;
     margin: 0 auto;
-}
-
-.max-content-width {
     max-width: 1000px;
 }
 
@@ -85,6 +82,9 @@ body {
     color: #080b0b;
 }
 
+h2 {
+    font-size: 1.25rem;
+}
 
 /* -------------------------------------
 Header styles (Main Module)
@@ -112,7 +112,7 @@ h1,
 }
 
 h1 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     padding: 1rem 0;
 }
 
@@ -125,6 +125,7 @@ h1 {
 }
 
 #nav-list a {
+    font-size: .85rem;
     text-decoration: none;
     letter-spacing: .7px;
     padding: 0 .5rem;
@@ -135,7 +136,7 @@ h1 {
 }
 
 #hero-image-container {
-    height: 400px;
+    height: 215px;
     margin: 0 auto;
     background-image: url(images/beach-landscape-sea-water-nature-forest-912844-pxhere.com.jpg);
     background-repeat: no-repeat;
@@ -143,17 +144,16 @@ h1 {
     background-size: cover;
 }
 
-/****Ask about absolute. Do I need a position relative on the parent?****/
 #slogan-container {
     position: absolute;
     opacity: .85;
-    margin-top: 7rem;
+    margin-top: 6rem;
     border-radius: 5px;
     background-color: #d6dde0;
 }
 
 .slogan {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     padding: .4rem;
 }
 
@@ -162,25 +162,17 @@ h1 {
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
-
-#main-content-container h2 {
-    font-size: 1.7rem;
-    padding: 1rem 0;
-}
-
 #main-content-container h3,
 #main-content-container p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 #about-me-container {
     margin: 1rem auto;
 }
 
-#portfolio-bio,
-.inline-project-content {
-    vertical-align: top;
-    margin-top: 1.25rem;
+#portfolio-bio {
+    margin-top: 1rem;
 }
 
 /******STYLES FOR ABOUT ME SECTION******/
@@ -200,8 +192,9 @@ Content styles (Main Module)
 }
 
 /******STYLES FOR SKILLS SECTION******/
-#skills-container {
-    padding-bottom: 3rem;
+#skills-container,
+#all-projects-container {
+    margin-top: 2rem;
     clear: right;
 }
 
@@ -219,7 +212,6 @@ Content styles (Main Module)
 .project-container {
     padding: 1rem;
     margin: 1rem 0;
-    text-align: left;
     border-bottom: 1px solid #080b0b;
 }
 
@@ -233,32 +225,14 @@ Content styles (Main Module)
     margin-left: .5rem;
 }
 
-#bek-lingo,
-#sop-app,
-#fav-coffee,
-#women-and-auto {
-    height: 275px;
+.project-container p {
+    text-align: left;
+}
+
+.inline-project-content img {
+    width: 95%;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top center;
-/*    box-shadow: 1px 3px 6px grey;*/
-    border-radius: 3px;
-}
-
-#bek-lingo {
-    background-image: url(project-screenshots/bek-lingo-screenshot.png);
-}
-
-#sop-app {
-    background-image: url(project-screenshots/sop-screenshot.png);
-}
-
-#fav-coffee {
-    background-image: url(project-screenshots/coffee-app-screenshot.png);
-}
-
-#women-and-auto {
-    background-image: url(project-screenshots/women-and-auto-screenshot.png);
 }
 
 .code-demo {
@@ -269,7 +243,7 @@ Content styles (Main Module)
 .code-demo button,
 #submit-button {
     margin: 0 .5rem;
-    padding: .75rem 0;
+    padding: .25rem 0;
     background-color: #506a7c;
     border-radius: 3px;
     box-shadow: 1px 1px 4px #b2b7b1;
@@ -279,7 +253,7 @@ Content styles (Main Module)
 
 .code-demo button {
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: .9rem;
     width: 100px;
 }
 
@@ -305,7 +279,7 @@ footer {
     left: 0;
     bottom: 0;
     font-size: 1.25rem;
-    padding: 1rem 0;
+    padding: .5rem 0;
 }
 
 footer p,
@@ -317,13 +291,12 @@ footer p,
 footer p,
 .contact-info a {
     color: #f0f18c;
-
+    font-size: 1rem;
 }
 
-.contact-info a {
-    font-size: 1.5rem;
-    vertical-align: middle;
 
+.contact-info a {
+    vertical-align: middle;
 }
 
 .contact-info a:hover {
@@ -356,19 +329,40 @@ place all the mobile tables styles bellow this line
     .max-content-width {
         width: 90%;
     }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    #main-content-container h3 {
+        font-size: 1.5rem;
+    }
+
+    #main-content-container p {
+        font-size: 1.25rem;
+    }
+
+    #hero-image-container {
+        height: 260px;
+    }
+
+    .project-image-container,
+    .project-content-container {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
 
 /*ipad potrait*/
 
 @media only screen and (min-width: 768px) {
+    #photo-bio-container {
+        padding-top: 1rem;
+    }
 
-}
 
-
-/*ipad lanscape / small laptop*/
-
-@media only screen and (min-width: 1024px) {
     #header-title,
     #nav-container,
     #portfolio-bio-photo,
@@ -378,7 +372,25 @@ place all the mobile tables styles bellow this line
         width: 49%;
     }
 
+    .project-image-container,
+    .project-content-container {
+        width: 49%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .code-demo button {
+        font-size: 1.1rem;
+    }
+}
+
+
+/*ipad lanscape / small laptop*/
+
+@media only screen and (min-width: 1024px) {
+
     #header-title h1 {
+        font-size: 1.75rem;
         text-align: left;
         padding-left: 1rem;
     }
@@ -388,19 +400,17 @@ place all the mobile tables styles bellow this line
         padding-right: 1rem;
     }
 
+    #nav-container a {
+        font-size: 1.1rem;
+    }
+
+    #hero-image-container {
+        height: 343px;
+/*        max-height: 466px;*/
+    }
+
     #portfolio-bio-photo {
         text-align: right;
         float: right;
-    }
-
-    .project-demo,
-    .inline-project-content {
-        display: inline-block;
-        width: 49%;
-    }
-
-    .project-demo,
-    .inline-project-content {
-        vertical-align: middle;
     }
 }
