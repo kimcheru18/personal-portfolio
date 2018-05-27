@@ -63,7 +63,7 @@ body {
 }
 
 body .max-content-width {
-    width: 85%;
+    width: 88%;
     margin: 0 auto;
     max-width: 1000px;
 }
@@ -125,7 +125,7 @@ h1 {
 }
 
 #nav-list a {
-    font-size: .95rem;
+    font-size: .85rem;
     text-decoration: none;
     letter-spacing: .7px;
     padding: 0 .5rem;
@@ -136,7 +136,7 @@ h1 {
 }
 
 #hero-image-container {
-    height: 25rem;
+    height: 18rem;
     margin: 0 auto;
     background-image: url(images/beach-landscape-sea-water-nature-forest-912844-pxhere.com.jpg);
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ h1 {
 #slogan-container {
     position: absolute;
     opacity: .85;
-    top: 8rem;
+    top: 6rem;
     border-radius: 5px;
     background-color: #d6dde0;
 }
@@ -164,20 +164,13 @@ Content styles (Main Module)
 */
 #main-content-container h3,
 #main-content-container p {
-    font-size: 1.25rem;
-}
-
-.page-content {
-    margin-top: 3rem;
+    font-size: 1.1rem;
 }
 
 .page-content:first-child {
-    margin-top: 2rem;
-}
-
-#portfolio-bio {
     margin-top: 1rem;
 }
+
 
 /******STYLES FOR ABOUT ME SECTION******/
 #about-me-container {
@@ -185,7 +178,7 @@ Content styles (Main Module)
 }
 
 #about-me-photo {
-    height: 26rem;
+    height: 20rem;
     border-radius: 5px;
     box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
     box-shadow: 1px 3px 6px grey;
@@ -193,6 +186,7 @@ Content styles (Main Module)
 
 #portfolio-bio{
     text-align: left;
+    margin-top: 1rem;
 }
 
 #portfolio-bio-photo {
@@ -201,10 +195,6 @@ Content styles (Main Module)
 
 /******STYLES FOR SKILLS SECTION******/
 
-#code-icons-container,
-#all-projects-container {
-    padding-top: 3rem;
-}
 #code-icons-container .code-lang-icons {
     display: inline-block;
 }
@@ -326,7 +316,7 @@ place all the mobile tables styles bellow this line
     }
 
     #main-content-container h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     #main-content-container p {
@@ -335,6 +325,11 @@ place all the mobile tables styles bellow this line
 
     #about-me-container {
         padding: 0;
+    }
+
+    #skills-container,
+    #all-projects-container {
+        padding-top: 3rem;
     }
 }
 
@@ -420,6 +415,10 @@ place all the mobile tables styles bellow this line
         margin-top: 2rem;
         float: right;
         text-align: right;
+    }
+
+    #about-me-photo {
+        height: 26rem;
     }
 
     #skills-container {
