@@ -235,6 +235,10 @@ Content styles (Main Module)
     background-size: contain;
 }
 
+.inline-project-content img:hover {
+    box-shadow: 6px 6px 3px lightgrey;
+}
+
 .code-demo {
     text-align: center;
     margin: 1rem;
